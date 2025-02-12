@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi Variable', sans-serif;
+}
+
+/* Navigation */
+.navigation {
+    border-radius: 16px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid rgba(27, 27, 27, 0.08);
+    max-width: 1360px;
+    width: 100%;
+    height: 64px;
+    margin: 20px auto;
+    width: 1360px;
+    position: relative;
+    z-index: 10; /* Ensure it's above other content */
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 28px;
+    color: #1b1b1b;
+    font-weight: 900;
+}
+
+.logo-image {
+    width: 29px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav-link {
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #1b1b1b;
+    border-radius: 8px;
+}
+
+.nav-link-active {
+    background-color: #2b2e4a;
+    color: #fff;
+}
+
+.nav-link:not(.nav-link-active) {
+    background-color: #f5f5f5;
+}
+
+.nav-item-dropdown {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: #fff;
+    top: 40px;
+    left: 0;
+    padding: 10px;
+    list-style: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.nav-item-dropdown:hover .dropdown {
+    display: block;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.email-link {
+    color: #1b1b1b;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.phone-link {
+    border-radius: 8px;
+    background-color: #ff5900;
+    box-shadow: 0 8px 20px rgba(255, 89, 0, 0.24);
+    padding: 12px 24px;
+    color: #fff;
+    font-weight: 500;
+    border: 2px solid rgba(255, 255, 255, 0.32);
+    text-decoration: none;
+}
+
+/* Mobile Responsive */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: left;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .phone-link {
+        width: 100%;
+        justify-content: center;
+    }
+} 

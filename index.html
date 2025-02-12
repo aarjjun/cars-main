@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars of Dubai</title>
+
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="./styles/search.css">
+    <link rel="stylesheet" href="./styles/cars.css">
+    <script defer src="scripts/script.js"></script>
+</head>
+<body>
+    <nav class="navigation" aria-label="Main Navigation">
+        <div class="logo-container">
+            <img loading="lazy" src="./assets/images/Logo.png" class="logo-image" alt="Cars of Dubai logo">
+            <h1 class="company-name">carsofdubai</h1>
+        </div>
+
+        <button class="menu-toggle">☰</button>
+
+        <ul class="nav-links">
+            <li><a href="#" class="nav-link nav-link-active">Home</a></li>
+            <li><a href="#" class="nav-link">Rent a Car</a></li>
+            <li class="nav-item-dropdown">
+                <a href="#" class="nav-link nav-link-dropdown">Dubai Locations ▼</a>
+                <ul class="dropdown">
+                    <li><a href="#">Location 1</a></li>
+                    <li><a href="#">Location 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav-link">Blog</a></li>
+        </ul>
+
+        <div class="contact-info">
+            <a href="mailto:info@carsofdubai.com" class="email-link">info@carsofdubai.com</a>
+            <a href="tel:+97150972387" class="phone-link"><span class="phone-number">+971 50 972 3873</span></a>
+        </div>
+    </nav>
+    <!--  .....................................nav ba.................................. -->
+    <div class="car-search-container">
+        <img
+          loading="lazy"
+          src="./assets/images/introImg.jpeg"
+          class="background-image"
+          alt="Background image of a car"
+        />
+        <h1 class="search-title">Find Your Perfect Ride Today!</h1>
+        <form class="search-form" role="search">
+          <div class="form-group">
+            <label for="make-select" class="form-label">Make</label>
+            <div class="select-wrapper">
+              <select id="make-select" class="select-text" aria-label="Select make">
+                <option value="">Select make</option>
+              </select>
+              <span class="select-arrow" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="model-select" class="form-label">Model</label>
+            <div class="select-wrapper">
+              <select id="model-select" class="select-text" aria-label="Select model">
+                <option value="">Select model</option>
+              </select>
+              <span class="select-arrow" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="year-select" class="form-label">Model Year</label>
+            <div class="select-wrapper">
+              <select id="year-select" class="select-text" aria-label="Select year">
+                <option value="">Select year</option>
+              </select>
+              <span class="select-arrow" aria-hidden="true"></span>
+            </div>
+          </div>
+          <button type="submit" class="search-button">Search</button>
+        </form>
+    </div>
+    <!-- ////////////////////////////////////////// -->
+    <section class="stats-container" aria-label="Company Statistics">
+      <div class="stats-row">
+        <div class="stats-column">
+          <div class="stats-item">
+            <div class="stats-content">
+              <div class="stats-number" aria-label="150 plus premium cars">
+                150<span class="accent-color">+</span>
+              </div>
+              <div class="stats-label">premium cars</div>
+            </div>
+            <div class="stats-divider" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div class="stats-column">
+          <div class="stats-item">
+            <div class="stats-content">
+              <div class="stats-number" aria-label="4,000 plus trusted customers">
+                4,000<span class="accent-color">+</span>
+              </div>
+              <div class="stats-label">Trusted Customers</div>
+            </div>
+          </div>
+        </div>
+        <div class="stats-column">
+          <div class="stats-item">
+            <div class="stats-divider" aria-hidden="true"></div>
+            <div class="stats-content">
+              <div class="stats-number" aria-label="25 plus cities served">
+                25<span class="accent-color">+</span>
+              </div>
+              <div class="stats-label">Cities Served</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="divider" role="separator" aria-hidden="true"></div>
+    <section class="about-section" aria-labelledby="about-heading">
+      <div class="about-content">
+        <div class="about-title-column">
+          <h2 id="about-heading" class="about-title">About</h2>
+        </div>
+        <div class="about-description-column">
+          <p class="about-description">
+            Experience luxury with our premium car rentals. At Cars of Dubai, we
+            offer top-tier vehicles and exceptional service for unforgettable
+            journeys.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- /////////////cars section//////////// -->
+    <section class="car-listings">
+      <div class="super-cars-section">
+        <header class="section-header">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/71243362245c88da0b04e41a9a2713522f1dd4c026fa4458191837bb9d11b5de?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="section-header-bg" aria-hidden="true">
+          <div class="section-header-content">
+            <h2 class="section-title">super cars</h2>
+            <button class="view-all-btn">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb00eff18b4ccaedb2aac0162b6a8b74e62b2edf17a271b37ac8a1f584069225?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="view-all-icon" aria-hidden="true">
+              View all
+            </button>
+          </div>
+        </header>
+        <div class="car-grid">
+          <article class="car-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bcb6e7cd96d81bbc90d4710d684572ed436557013733405c8c81f2362cbdbe79?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="Mercedes G63" class="car-image">
+            <div class="car-details">
+              <h3 class="car-name">Mercedes G63</h3>
+              <div class="car-features">
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7134a62d479626d7e799c9cb76501c23a7a26a0d534810b509d847c5460441d0?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  petrol
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6ae4e765c7a23f54e32e3ffcde371ab373641c45d40ad65690284cead7757fb?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  Automatic
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/10c698fbde01fdca80202ffefae50b549b720f5bf4fd69b16ece1abe4f9d54a2?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  5
+                </span>
+              </div>
+              <div class="divider" aria-hidden="true"></div>
+              <p class="car-price">
+                <span class="visually-hidden">Price:</span>
+                AED 1600 <span class="price-period">/ day</span>
+              </p>
+            </div>
+            <div class="car-actions">
+              <a href="#" class="action-btn whatsapp-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/621c280a0b93b916f8694e6a3eb041f0dbea85db23ab0709a1667bfb798f3626?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                Whatsapp
+              </a>
+              <a href="#" class="action-btn call-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c3197950add968f2e9415d15fbf50ae449322b98f06d8171a1ae8ae929aa252?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                Call
+              </a>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5bb924d2af7bd797341d3a5cf33192a5e8db5bb0f6b8784fdfe1e02572eb6b62?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="Mercedes G63" class="car-image">
+            <div class="car-details">
+              <h3 class="car-name">Mercedes G63</h3>
+              <div class="car-features">
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7134a62d479626d7e799c9cb76501c23a7a26a0d534810b509d847c5460441d0?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  petrol
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6ae4e765c7a23f54e32e3ffcde371ab373641c45d40ad65690284cead7757fb?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  Automatic
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/10c698fbde01fdca80202ffefae50b549b720f5bf4fd69b16ece1abe4f9d54a2?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  5
+                </span>
+              </div>
+              <div class="divider" aria-hidden="true"></div>
+              <p class="car-price">
+                <span class="visually-hidden">Price:</span>
+                AED 1600 <span class="price-period">/ day</span>
+              </p>
+            </div>
+            <div class="car-actions">
+              <a href="#" class="action-btn whatsapp-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/621c280a0b93b916f8694e6a3eb041f0dbea85db23ab0709a1667bfb798f3626?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                Whatsapp
+              </a>
+              <a href="#" class="action-btn call-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c3197950add968f2e9415d15fbf50ae449322b98f06d8171a1ae8ae929aa252?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                Call
+              </a>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c11ba88230919b37408c9f3ac69de4982b6817e2abd73701cd37ba7c09a96d20?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="Mercedes G63" class="car-image">
+            <div class="car-details">
+              <h3 class="car-name">Mercedes G63</h3>
+              <div class="car-features">
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7134a62d479626d7e799c9cb76501c23a7a26a0d534810b509d847c5460441d0?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  petrol
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6ae4e765c7a23f54e32e3ffcde371ab373641c45d40ad65690284cead7757fb?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  Automatic
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/10c698fbde01fdca80202ffefae50b549b720f5bf4fd69b16ece1abe4f9d54a2?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  5
+                </span>
+              </div>
+              <div class="divider" aria-hidden="true"></div>
+              <p class="car-price">
+                <span class="visually-hidden">Price:</span>
+                AED 1600 <span class="price-period">/ day</span>
+              </p>
+            </div>
+            <div class="car-actions">
+              <a href="#" class="action-btn whatsapp-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/621c280a0b93b916f8694e6a3eb041f0dbea85db23ab0709a1667bfb798f3626?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                Whatsapp
+              </a>
+              <a href="#" class="action-btn call-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c3197950add968f2e9415d15fbf50ae449322b98f06d8171a1ae8ae929aa252?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                Call
+              </a>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/fadc4694ff4d3b81339dfcc52db86fd670e20511d041726c2ee68ea5285f8171?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="Mercedes G63" class="car-image">
+            <div class="car-details">
+              <h3 class="car-name">Mercedes G63</h3>
+              <div class="car-features">
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7134a62d479626d7e799c9cb76501c23a7a26a0d534810b509d847c5460441d0?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  petrol
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6ae4e765c7a23f54e32e3ffcde371ab373641c45d40ad65690284cead7757fb?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  Automatic
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/10c698fbde01fdca80202ffefae50b549b720f5bf4fd69b16ece1abe4f9d54a2?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  5
+                </span>
+              </div>
+              <div class="divider" aria-hidden="true"></div>
+              <p class="car-price">
+                <span class="visually-hidden">Price:</span>
+                AED 1600 <span class="price-period">/ day</span>
+              </p>
+            </div>
+            <div class="car-actions">
+              <a href="#" class="action-btn whatsapp-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/621c280a0b93b916f8694e6a3eb041f0dbea85db23ab0709a1667bfb798f3626?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                whatsapp
+              </a>
+              <a href="#" class="action-btn call-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c3197950add968f2e9415d15fbf50ae449322b98f06d8171a1ae8ae929aa252?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                Call
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    
+      <div class="sports-cars-section">
+        <header class="section-header">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f6b05d5ef75924226399eb73e3f0f909d5cae791a706c3d72d1d70c58a457cb3?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="section-header-bg" aria-hidden="true">
+          <div class="section-header-content">
+            <h2 class="section-title">sports cars</h2>
+            <button class="view-all-btn">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb00eff18b4ccaedb2aac0162b6a8b74e62b2edf17a271b37ac8a1f584069225?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="view-all-icon" aria-hidden="true">
+              View all
+            </button>
+          </div>
+        </header>
+        <div class="car-grid">
+          <article class="car-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/40d011d548575940d1552913d3e75c19da081f101c0805f33794e452e9a3ea3d?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="Mercedes G63" class="car-image">
+            <div class="car-details">
+              <h3 class="car-name">Mercedes G63</h3>
+              <div class="car-features">
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7134a62d479626d7e799c9cb76501c23a7a26a0d534810b509d847c5460441d0?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  petrol
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6ae4e765c7a23f54e32e3ffcde371ab373641c45d40ad65690284cead7757fb?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  Automatic
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6f4f9bbfb77a4113db5bbcd96f133b87e5690c911e70b82631fab2be854e1527?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  5
+                </span>
+              </div>
+              <div class="divider" aria-hidden="true"></div>
+              <p class="car-price">
+                <span class="visually-hidden">Price:</span>
+                AED 1600 <span class="price-period">/ day</span>
+              </p>
+            </div>
+            <div class="car-actions">
+              <a href="#" class="action-btn whatsapp-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/621c280a0b93b916f8694e6a3eb041f0dbea85db23ab0709a1667bfb798f3626?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                whatsapp
+              </a>
+              <a href="#" class="action-btn call-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c3197950add968f2e9415d15fbf50ae449322b98f06d8171a1ae8ae929aa252?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                Call
+              </a>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3fdca0e3173dc7ed93fbbbbe827b720770142fd412ca45544ac5beec873141ed?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="Mercedes G63" class="car-image">
+            <div class="car-details">
+              <h3 class="car-name">Mercedes G63</h3>
+              <div class="car-features">
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7134a62d479626d7e799c9cb76501c23a7a26a0d534810b509d847c5460441d0?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  petrol
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6ae4e765c7a23f54e32e3ffcde371ab373641c45d40ad65690284cead7757fb?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  Automatic
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6f4f9bbfb77a4113db5bbcd96f133b87e5690c911e70b82631fab2be854e1527?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  5
+                </span>
+              </div>
+              <div class="divider" aria-hidden="true"></div>
+              <p class="car-price">
+                <span class="visually-hidden">Price:</span>
+                AED 1600 <span class="price-period">/ day</span>
+              </p>
+            </div>
+            <div class="car-actions">
+              <a href="#" class="action-btn whatsapp-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/621c280a0b93b916f8694e6a3eb041f0dbea85db23ab0709a1667bfb798f3626?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                Whatsapp
+              </a>
+              <a href="#" class="action-btn call-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c3197950add968f2e9415d15fbf50ae449322b98f06d8171a1ae8ae929aa252?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                Call
+              </a>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/cfc7b853ac79b750bb3a9c9f402baabace8c52ed490b5f3d6904630929a66b7f?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="Mercedes G63" class="car-image">
+            <div class="car-details">
+              <h3 class="car-name">Mercedes G63</h3>
+              <div class="car-features">
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7134a62d479626d7e799c9cb76501c23a7a26a0d534810b509d847c5460441d0?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  petrol
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6ae4e765c7a23f54e32e3ffcde371ab373641c45d40ad65690284cead7757fb?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  Automatic
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6f4f9bbfb77a4113db5bbcd96f133b87e5690c911e70b82631fab2be854e1527?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  5
+                </span>
+              </div>
+              <div class="divider" aria-hidden="true"></div>
+              <p class="car-price">
+                <span class="visually-hidden">Price:</span>
+                AED 1600 <span class="price-period">/ day</span>
+              </p>
+            </div>
+            <div class="car-actions">
+              <a href="#" class="action-btn whatsapp-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/621c280a0b93b916f8694e6a3eb041f0dbea85db23ab0709a1667bfb798f3626?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                Whatsapp
+              </a>
+              <a href="#" class="action-btn call-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c3197950add968f2e9415d15fbf50ae449322b98f06d8171a1ae8ae929aa252?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                Call
+              </a>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8870ef214dfc6d8cfe36809ec0abc22950e242d98dc4b6e9f02c3979d55cda92?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="Mercedes G63" class="car-image">
+            <div class="car-details">
+              <h3 class="car-name">Mercedes G63</h3>
+              <div class="car-features">
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7134a62d479626d7e799c9cb76501c23a7a26a0d534810b509d847c5460441d0?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  petrol
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6ae4e765c7a23f54e32e3ffcde371ab373641c45d40ad65690284cead7757fb?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  Automatic
+                </span>
+                <span class="feature">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6f4f9bbfb77a4113db5bbcd96f133b87e5690c911e70b82631fab2be854e1527?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="feature-icon" aria-hidden="true">
+                  5
+                </span>
+              </div>
+              <div class="divider" aria-hidden="true"></div>
+              <p class="car-price">
+                <span class="visually-hidden">Price:</span>
+                AED 1600 <span class="price-period">/ day</span>
+              </p>
+            </div>
+            <div class="car-actions">
+              <a href="#" class="action-btn whatsapp-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/621c280a0b93b916f8694e6a3eb041f0dbea85db23ab0709a1667bfb798f3626?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                Whatsapp
+              </a>
+              <a href="#" class="action-btn call-btn">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c3197950add968f2e9415d15fbf50ae449322b98f06d8171a1ae8ae929aa252?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" alt="" class="action-icon" aria-hidden="true">
+                Call
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+</body>
+</html>  
