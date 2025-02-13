@@ -45,44 +45,53 @@
     </nav>
     <!--  .....................................nav ba.................................. -->
     <div class="car-search-container">
-        <img
+      <img
           loading="lazy"
           src="./assets/images/introImg.jpeg"
           class="background-image"
           alt="Background image of a car"
-        />
-        <h1 class="search-title">Find Your Perfect Ride Today!</h1>
-        <form class="search-form" role="search">
+      />
+      <h1 class="search-title">Find Your Perfect Ride Today!</h1>
+      <form class="search-form" role="search">
           <div class="form-group">
-            <label for="make-select" class="form-label">Make</label>
-            <div class="select-wrapper">
-              <select id="make-select" class="select-text" aria-label="Select make">
-                <option value="">Select make</option>
-              </select>
-              <span class="select-arrow" aria-hidden="true"></span>
-            </div>
+              <label for="make-select" class="form-label">Make</label>
+              <div class="select-wrapper">
+                  <select id="make-select" class="select-text" aria-label="Select make" onclick="showPopUp('makepop.html')">
+                      <option value="">Select make</option>
+                      <!-- Add more options as needed -->
+                  </select>
+                  <span class="select-arrow" aria-hidden="true"></span>
+              </div>
           </div>
           <div class="form-group">
-            <label for="model-select" class="form-label">Model</label>
-            <div class="select-wrapper">
-              <select id="model-select" class="select-text" aria-label="Select model">
-                <option value="">Select model</option>
-              </select>
-              <span class="select-arrow" aria-hidden="true"></span>
-            </div>
+              <label for="model-select" class="form-label">Model</label>
+              <div class="select-wrapper">
+                  <select id="model-select" class="select-text" aria-label="Select model">
+                      <option value="">Select model</option>
+                  </select>
+                  <span class="select-arrow" aria-hidden="true"></span>
+              </div>
           </div>
           <div class="form-group">
-            <label for="year-select" class="form-label">Model Year</label>
-            <div class="select-wrapper">
-              <select id="year-select" class="select-text" aria-label="Select year">
-                <option value="">Select year</option>
-              </select>
-              <span class="select-arrow" aria-hidden="true"></span>
-            </div>
+              <label for="year-select" class="form-label">Model Year</label>
+              <div class="select-wrapper">
+                  <select id="year-select" class="select-text" aria-label="Select year">
+                      <option value="">Select year</option>
+                  </select>
+                  <span class="select-arrow" aria-hidden="true"></span>
+              </div>
           </div>
           <button type="submit" class="search-button">Search</button>
-        </form>
-    </div>
+      </form>
+  </div>
+  
+  <!-- Pop-up Overlay (This should be added outside of the main form container) -->
+  <div id="popup-overlay" class="popup-overlay">
+      <div class="popup-content">
+          <!-- Content will be dynamically loaded here -->
+      </div>
+  </div>
+  
     <!-- ////////////////////////////////////////// -->
     <section class="stats-container" aria-label="Company Statistics">
       <div class="stats-row">

@@ -1,0 +1,219 @@
+<style>
+    .car-brands-container {
+  border-radius: 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: rgba(27, 27, 27, 0.7);
+  justify-content: center;
+  padding: 32px;
+  font: 700 20px Satoshi Variable, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .car-brands-container {
+    padding: 0 20px;
+  }
+}
+.brand-list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 16px;
+  justify-content: start;
+  flex-wrap: wrap; 
+}
+@media (max-width: 991px) {
+  .brand-list {
+    max-width: 100%;
+  }
+}
+.brand-item {
+  border-radius: 12px;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  justify-content: start;
+  margin: auto 0;
+  padding: 8px 20px 8px 8px;
+  border: 1px solid rgba(27, 27, 27, 0.1);
+  flex: 1 0 18%;
+  max-width: 18%;
+}
+@media (max-width: 991px) {
+  .brand-item {
+    white-space: initial;
+  }
+}
+.brand-logo {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 64px;
+  border-radius: 4px;
+  align-self: stretch;
+  margin: auto 0;
+}
+.brand-name {
+  align-self: stretch;
+  margin: auto 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.popup-content {
+    background-color: white;
+    overscroll-behavior: none;
+    padding: 20px;
+    border-radius: 21px;
+    width: 76%;
+    max-height: 93%;
+    overflow-y: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.car-brands-container {
+  border-radius: 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: rgba(27, 27, 27, 0.7);
+  justify-content: center;
+  padding: 32px;
+  font: 700 20px Satoshi Variable, -apple-system, Roboto, Helvetica, sans-serif;
+  opacity: 0; 
+  transform: translateY(20px); /* Start slightly lower */
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+@media (max-width: 991px) {
+  .car-brands-container {
+    padding: 20px;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  gap: 16px;
+  justify-content: center; /* Center align items */
+}
+
+.brand-item {
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  justify-content: start;
+  padding: 8px 20px 8px 8px;
+  border: 1px solid rgba(27, 27, 27, 0.1);
+  flex: 1 0 18%; /* 5 items per row on large screens */
+  max-width: 18%;
+}
+
+.brand-logo {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 64px;
+  border-radius: 4px;
+}
+
+.brand-name {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Tablet View (max 3 per row) */
+@media (max-width: 768px) {
+  .brand-item {
+    flex: 1 0 30%; /* 3 items per row */
+    max-width: 30%;
+  }
+}
+
+/* Mobile View (max 2 per row) */
+@media (max-width: 480px) {
+  .brand-item {
+    flex: 1 0 45%; /* 2 items per row */
+    max-width: 45%;
+  }
+}
+
+
+  </style>
+  
+  <section class="car-brands-container" aria-label="Car Brands">
+    <h2 class="visually-hidden">Featured Car Brands</h2>
+    <div class="brand-list">
+      <div class="brand-item" tabindex="0" role="button">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2ea4a02c0e75e0a1da6866a0fdfd1288607536b41941e37b705386f5d2175207?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" class="brand-logo" alt="BMW logo" />
+        <span class="brand-name">BMW</span>
+      </div>
+      <div class="brand-item" tabindex="0" role="button">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0d5fe74291548ab3d83b798d025ab915f966628774a0dd1777c46cd91cd2c80c?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" class="brand-logo" alt="Koenigsegg logo" />
+        <span class="brand-name">koenigsegg</span>
+      </div>
+      <div class="brand-item" tabindex="0" role="button">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc5ba69116b7ae14e93f688ef7415d1e3f6b574ea8b3174f81bf01d599f5dfe1?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" class="brand-logo" alt="Jaguar logo" />
+        <span class="brand-name">Jaguar</span>
+      </div>
+      <div class="brand-item" tabindex="0" role="button">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9a136366e7ab4d5abf3ed33fb9b0fee6df7ffb0c1ab61797fd775fc56b55d4a1?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" class="brand-logo" alt="Bugatti logo" />
+        <span class="brand-name">bugatti</span>
+      </div>
+      <div class="brand-item" tabindex="0" role="button">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d65d13d8ffde375adc11ac07b6e1ff4dbec90c3144fe894b5a7ebea3c7cc790?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" class="brand-logo" alt="Chevrolet logo" />
+        <span class="brand-name">chevrolet</span>
+      </div>
+      <div class="brand-item" tabindex="0" role="button">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/baa40cb6de806b6c22fc3e5750034c8e45a873bf23934e273042e50287ca7839?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" class="brand-logo" alt="Ferrari logo" />
+        <span class="brand-name">ferrari</span>
+      </div>
+      <div class="brand-item" tabindex="0" role="button">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3f1cfaca57cab6af302809d9e0f6245975a7c709f54c0c76b13503fe3ef47998?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" class="brand-logo" alt="Ford logo" />
+        <span class="brand-name">Ford</span>
+      </div>
+      <div class="brand-item" tabindex="0" role="button">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/197d28a7f55183195db7f63dad5f4f4119702852c686ac5508f819ba39bc19a4?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" class="brand-logo" alt="Land Rover logo" />
+        <span class="brand-name">land rover</span>
+      </div>
+      <div class="brand-item" tabindex="0" role="button">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/46dc5cb92821f95ce4f48c0a3133d9f293d0cb849c379f1a9cb64ed22cc75f54?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" class="brand-logo" alt="Ferrari logo" />
+        <span class="brand-name">ferrari</span>
+      </div>
+      <div class="brand-item" tabindex="0" role="button">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/46dc5cb92821f95ce4f48c0a3133d9f293d0cb849c379f1a9cb64ed22cc75f54?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" class="brand-logo" alt="Ferrari logo" />
+        <span class="brand-name">ferrari</span>
+      </div>
+      <div class="brand-item" tabindex="0" role="button">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/46dc5cb92821f95ce4f48c0a3133d9f293d0cb849c379f1a9cb64ed22cc75f54?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" class="brand-logo" alt="Ferrari logo" />
+        <span class="brand-name">ferrari</span>
+      </div>
+      <div class="brand-item" tabindex="0" role="button">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/46dc5cb92821f95ce4f48c0a3133d9f293d0cb849c379f1a9cb64ed22cc75f54?placeholderIfAbsent=true&apiKey=e9435bbe39be434486c9e988bf8506ff" class="brand-logo" alt="Ferrari logo" />
+        <span class="brand-name">ferrari</span>
+      </div>
+    </div>
+  </section>

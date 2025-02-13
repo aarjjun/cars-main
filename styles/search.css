@@ -142,54 +142,54 @@ body {
   width: 100%;
   max-width: 1280px;
   max-height: 303px;
+  padding: 0 20px; /* Added padding for better spacing on smaller screens */
 }
 
 .stats-row {
   gap: 20px;
   display: flex;
+  justify-content: space-between; /* Ensure even spacing between columns */
+  align-items: center; /* Vertically center the stats within the row */
   margin-top: 15%;
 }
 
 .stats-column {
   display: flex;
   flex-direction: column;
-  line-height: normal;
-  width: 33%;
-  align-items: flex-end;
+  align-items: center; /* Align the content in the center horizontally */
+  width: 32%; /* Slightly reduce width for better responsiveness */
 }
 
 .stats-item {
   display: flex;
-  flex-grow: 1;
-  gap: 20px;
-  text-transform: uppercase;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px; /* Reduced gap for better spacing between number and label */
+  justify-content: center;
+  text-align: center; /* Centered text */
 }
 
 .stats-content {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  margin: auto 0;
+  justify-content: center;
 }
 
 .stats-number {
   color: rgba(27, 27, 27, 1);
   font-size: 80px;
   font-weight: 700;
+  line-height: 1; /* Ensure the numbers don't appear too stretched */
 }
 
 .stats-label {
   color: rgba(27, 27, 27, 0.5);
   font-size: 20px;
   font-weight: 500;
-  text-align: center;
-  margin-top: 8px;
 }
 
 .stats-divider {
   width: 1px;
-  height: 223px;
+  height: 100%; /* Adjust height to ensure it spans the full column */
   border: 1px solid rgba(27, 27, 27, 0.2);
 }
 
@@ -203,6 +203,7 @@ body {
   background-color: rgba(27, 27, 27, 0.2);
   margin: 20px 0;
 }
+
 
 /* About Section */
 .about-section {
